@@ -1,0 +1,32 @@
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+    <%- include('./partials/header.ejs') %>
+<body>
+    <div class="container">
+        <%- include('./partials/nav.ejs') %>
+        <div class="store">
+        <h2>
+            <% var film = films[0] %>
+        <%= film.store %>
+        </h2>
+        <% if (film.store_id == 1) { %>
+            <span>(Store One)</span>
+            <% } else { %>
+            <span>(Store Two)</span>
+            <% } %>
+    </div>
+    
+        <div class="labels">
+            <h3>Title || Revenue</h3>
+            
+        </div>
+        
+        <ul>
+        <% films.forEach(films => { %>
+            <li> <%= films.title%> <span>||</span> <%= films.sum %> </li>
+            <% }) %>
+            </ul>
+    </div>
+</body>
+<%- include('./partials/footer.ejs') %>
+</html>

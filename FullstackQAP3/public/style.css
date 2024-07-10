@@ -1,0 +1,57 @@
+header {
+    width: 100%;
+    background-color: black;
+    color: red;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3 {
+    font-size: 1.3rem;
+}
+body {
+    width: 100%;
+    margin: 0;
+}
+a {
+    color: black;
+    padding-inline: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+a:hover {
+    color: aquamarine;
+    text-decoration: underline;
+}
+.container {
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+.store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.store span {
+    font-size: 1.3rem;
+}
+li {
+    padding: 4px;
+    list-style-type: decimal;
+    font-size: 1.3rem;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
